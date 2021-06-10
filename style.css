@@ -1,0 +1,319 @@
+/**/
+body {
+  max-width: 1366px; /*Максимальная ширина страницы*/
+  margin: 0px auto; /*Отступы*/
+}
+.container {
+  margin: 0px auto; /*Центрирование контента*/
+  padding: 0px auto;
+  font-family: Arial, Helvetica, sans-serif; /*Шрифт сайта*/
+}
+h2 {
+  /*Заголовки*/
+  font-size: 24px;
+  color: #ffa412;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/*Шапка сайта*/
+.header .logo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.header .logo a {
+  color: #000;
+  text-decoration: none;
+}
+.header .nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+.header .nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffa412;
+}
+.header .nav ul li a:hover {
+  color: #aa6e0c;
+  transition: all 1s;
+}
+/*Шапка сайта*/
+
+/*Алгоритм бронирования слайдер*/
+.slider-adaptive input {
+  display: none;
+}
+.slider-adaptive .slider {
+  text-align: center;
+}
+.slider-adaptive .slider label {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: #ffa412;
+  display: inline-block;
+  margin: 0 3px;
+}
+#slide1:checked ~ .slider label[for="slide1"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+#slide2:checked ~ .slider label[for="slide2"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+#slide3:checked ~ .slider label[for="slide3"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+#slide4:checked ~ .slider label[for="slide4"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+#slide5:checked ~ .slider label[for="slide5"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+#slide6:checked ~ .slider label[for="slide6"] {
+  background-color: #aa6e0c;
+  transition: all 1s;
+}
+.slider-adaptive .slider-content {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.slider-adaptive .slider-content .slider-next {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  transition: all 1s;
+}
+.slider-adaptive .slider-content .slider-next .x {
+  width: 100%;
+  height: 100px;
+  flex-shrink: 0;
+  transition: all 1s;
+  text-align: center;
+  padding-top: 100px;
+}
+.slider-adaptive .slider-content .slider-next .x h4 {
+  font-size: 24px;
+}
+.slider-adaptive .slider-content .slider-next .x p {
+  font-size: 18px;
+}
+#slide2:checked ~ .slider-content .slider-next {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slider-content .slider-next {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slider-content .slider-next {
+  transform: translateX(-300%);
+}
+#slide5:checked ~ .slider-content .slider-next {
+  transform: translateX(-400%);
+}
+#slide6:checked ~ .slider-content .slider-next {
+  transform: translateX(-500%);
+}
+/*Алгоритм бронирования слайдер*/
+
+/*О компании*/
+.about {
+  text-align: center;
+  padding: 0 50px;
+  text-indent: 40px;
+  font-size: 18px;
+}
+.about .txt {
+  text-align: left;
+  margin-bottom: 40px;
+}
+/*О компании*/
+
+/*Поиск*/
+.search form {
+  width: 300px;
+  margin: 0px auto;
+}
+.search form label {
+  font-size: 18px;
+}
+.search form input {
+  width: 250px;
+  height: 30px;
+  padding: 0 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+.search form select {
+  width: 250px;
+  height: 30px;
+  padding: 0 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+.button {
+  background: #ffa412;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+.button:hover {
+  background: #aa6e0c;
+  transition: all 1s;
+}
+.search .button {
+  display: block;
+  width: 50px;
+  margin: 0px auto;
+}
+/*Поиск*/
+
+/*Акции*/
+.special {
+  margin: 0 50px;
+}
+.special h3 {
+  font-size: 20px;
+}
+.special .x {
+  margin-bottom: 70px;
+}
+.special p {
+  width: 60%;
+  display: inline-block;
+  position: relative;
+  top: -50px;
+  left: 30px;
+}
+.special a {
+  margin-left: 50%;
+  margin-top: -20px;
+}
+/*Акции*/
+
+/*Подписка*/
+.subscribe form {
+  width: 350px;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+.subscribe form label {
+  font-size: 18px;
+}
+.subscribe form input {
+  width: 250px;
+  height: 30px;
+  padding: 0 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+.subscribe .button {
+  margin-left: 30%;
+}
+/*Подписка*/
+
+/*Подвал*/
+.footer {
+  background: #ffa412;
+  padding: 50px;
+}
+.footer .copy {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer ul {
+  display: inline-block;
+}
+.footer ul li {
+  list-style-type: none;
+  color: white;
+}
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer .logo {
+  color: white;
+  font-size: 20px;
+  margin-left: 40px;
+}
+/*Подвал*/
+
+/*Результаты поиска*/
+.searchr {
+  margin: 30px 50px;
+  font-size: 16px;
+}
+.searchr .x {
+  margin-bottom: 50px;
+}
+.searchr a {
+  margin-left: 20%;
+}
+/*Результаты поиска*/
+
+/*Зоны*/
+.seat {
+  padding: 30px 50px;
+}
+.seat .map {
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 70px;
+}
+.seat .x p {
+  display: inline-block;
+  width: 50%;
+  margin-left: 40px;
+}
+.seat .x h3 {
+  margin-left: 100px;
+}
+.seat .x {
+  margin-bottom: 60px;
+}
+/*Зоны*/
+
+/*Бронрирование*/
+.booking {
+  margin: 30px 50px;
+  font-size: 16px;
+}
+.booking fieldset {
+  margin-bottom: 20px;
+}
+.booking textarea {
+  width: 500px;
+  height: 100px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.booking label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.booking .button {
+  display: block;
+  width: fit-content;
+  margin: 0px auto;
+}
+.booking .email {
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+/*Бронрирование*/
